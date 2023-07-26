@@ -21,7 +21,7 @@ export default function Weather() {
                 id="city-search"
                 type="search"
                 placeholder="Enter city"
-                autocomplete="off"
+                autoComplete="off"
                 className="form-control"
               />
             </div>
@@ -63,7 +63,7 @@ export default function Weather() {
       <span className="footer">
         This project was coded by Palesa Kgomari and is
         <a
-          href="https://github.com/PalesaPK/weather-app-project"
+          href="https://github.com/PalesaPK/react-weatherapp"
           target="_blank"
           rel="noreferrer"
         >
@@ -71,7 +71,7 @@ export default function Weather() {
         </a>
         and
         <a
-          href="https://gleaming-granita-c9fe2d.netlify.app"
+          href="https://glistening-speculoos-7a110a.netlify.app"
           target="_blank"
           rel="noreferrer"
         >

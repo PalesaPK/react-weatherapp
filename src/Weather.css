@@ -99,3 +99,7 @@ h1 {
 .forecast-max-temp {
   font-weight: 700;
 }
+
+.row {
+  display: flex;
+}
