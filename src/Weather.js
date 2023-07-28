@@ -61,7 +61,7 @@ export default function Weather() {
         <div className="prediction" id="forecast"></div>
       </div>
       <span className="footer">
-        This project was coded by Palesa Kgomari and is
+        This project was coded by Palesa Kgomari and is {""}
         <a
           href="https://github.com/PalesaPK/react-weatherapp"
           target="_blank"
@@ -69,7 +69,7 @@ export default function Weather() {
         >
           open-sourced on GitHub
         </a>
-        and
+        {""} and {""}
         <a
           href="https://glistening-speculoos-7a110a.netlify.app"
           target="_blank"
