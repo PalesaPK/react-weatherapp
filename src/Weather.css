@@ -80,6 +80,10 @@ h1 {
   font-weight: 900;
 }
 
+.units a {
+  text-decoration: none;
+}
+
 .prediction {
   font-weight: lighter 300;
   margin-top: 20px;
