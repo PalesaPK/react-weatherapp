@@ -6,10 +6,9 @@ h1 {
   font-weight: 900;
 }
 
-#icon {
-  width: 240px;
+canvas {
+  width: 200px;
   height: 105%;
-  object-fit: cover;
 }
 
 #description {
@@ -102,4 +101,5 @@ h1 {
 
 .forecast-max-temp {
   font-weight: 700;
+  margin-right: 3px;
 }
