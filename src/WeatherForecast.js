@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState("");
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
 
   function displayForecast(response) {
     setForecast(response.data.daily);
@@ -14,17 +19,15 @@ export default function WeatherForecast(props) {
     return (
       <div className="prediction" id="forecast">
         <div className="row">
-          <div className="col-3">
-            <div className="forecast-day">{forecast[0].dt}</div>
-            <img
-              src="https://openweathermap.org/img/wn/10d@2x.png"
-              width="50"
-            />
-            <div className="forecast-temps">
-              <span className="forecast-max-temp">{forecast[0].temp.max}°</span>
-              <span className="forecast-min-temp">{forecast[0].temp.min}°</span>
-            </div>
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 4) {
+              return (
+                <div className="col-3" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );

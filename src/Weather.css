@@ -88,6 +88,13 @@ canvas {
   margin-top: 20px;
 }
 
+.prediction canvas {
+  width: 50px;
+  height: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .wind,
 .windSpeedUnit {
   font-weight: lighter 300;
